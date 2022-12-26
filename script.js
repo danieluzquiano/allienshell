@@ -8,6 +8,7 @@ setup=_=>{createCanvas(w=windowWidth,h=windowHeight),noiseSeed(fxrand()*999999)}
       noStroke(),
       fill(255),
       n=map(mouseX,0,w,0,3),
+      m=map(mouseY,0,h,0,3),
       a=0;
       a<5;
       a+=4e-4
@@ -16,6 +17,6 @@ setup=_=>{createCanvas(w=windowWidth,h=windowHeight),noiseSeed(fxrand()*999999)}
     y=cos(a)/sin(t/x),
     e=cos(x)%a,
     f=2.5*noise(tan(e)),
-    circle(sin(tan(cos(y))+n)*f*e,sin(tan(sin(y))+t)*f,.012);
+    circle(sin(tan(cos(y))+n)*f*e,sin(tan(sin(y))+m)*f,.012);
     t += .03
   }; //#つぶやきProcessing
