@@ -4,7 +4,7 @@ setup=_=>{createCanvas(w=windowWidth,h=windowHeight),noiseSeed(fxrand()*999999)}
     for(
       background(0),
       translate(w/2,h/2),
-      scale(125),
+      scale(165),
       noStroke(),
       fill(255),
       n=map(mouseX,0,w,0,3),
