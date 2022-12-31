@@ -24,7 +24,7 @@ setup=_=>{createCanvas(w=windowWidth,h=windowHeight),noiseSeed(fxrand()*999999)}
     s+=.003
   }; //#つぶやきProcessing
 */
-t=1e4,s=r=g=b=0,s=100,
+t=1e4,z=r=g=b=0,s=100,
 setup=_=>{createCanvas(w=windowWidth,h=windowHeight),colorMode(HSB, 360),noiseSeed(fxrand()*999999),randomSeed(fxrand()*999999),r=random(360),g=random(360),b=random(360)
 }
   draw=_=>{
@@ -47,9 +47,9 @@ setup=_=>{createCanvas(w=windowWidth,h=windowHeight),colorMode(HSB, 360),noiseSe
       y+r+b,
       g*a,
       360),
-    circle(sin(tan(cos(y))+n)*f*e,sin(tan(sin(y))+s+m)*f,.012);
+    circle(sin(tan(cos(y))+n)*f*e,sin(tan(sin(y))+z+m)*f,.012);
     t += .03,
-    s+=.003;
+    z +=.003;
     if (mouseIsPressed === true) {
       s=150;
     } else {
